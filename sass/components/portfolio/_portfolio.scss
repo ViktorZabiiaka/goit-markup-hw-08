@@ -1,0 +1,32 @@
+.portfolio {
+  padding: 0;
+  margin: 0;
+
+  @include flex(flex, null, null, null, wrap);
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.portfolio__link {
+  @include transition(box-shadow, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+  display: block;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  &:hover .overlay__text,
+  &:focus .overlay__text {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolio > .list {
+  width: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}

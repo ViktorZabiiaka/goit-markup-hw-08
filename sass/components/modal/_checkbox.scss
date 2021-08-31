@@ -1,0 +1,57 @@
+.check {
+  position: relative;
+  @include flex(flex, center, center, null, null);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.check__label {
+  padding-left: 7px;
+  @include font(null, 14px, null, 1.71, .03em, $secondary-text-color);
+}
+
+.check__box {
+  @include transition(border-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  width: 16px;
+  height: 15px;
+  border: 2px solid $primary-color;
+  border-radius: 3px;
+  background-color: $primary-white-color;
+  
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+
+.check__icon {
+  @include transition(null, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  fill: $accent-color;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  border-radius: 3px;
+
+  opacity: 0;
+}
+
+.check__input:checked + .check__box .check__icon {
+  background-color: $accent-color;
+
+  opacity: 1;
+}
+
+.check__link {
+  @include font(null, 14px, null, 1.17, .03em, $accent-color);
+  text-decoration-line: underline;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

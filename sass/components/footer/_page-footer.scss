@@ -1,0 +1,56 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color;
+}
+
+// .footer__conteiner {
+//   @include flex(flex, baseline, space-between, null, null);
+// }
+
+.conteiner-footer {
+  padding-right: 9px;
+  margin-right: 70px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.page-footer__logo {
+  display: block;
+
+  margin-bottom: 20px;
+  color: $primary-white-color;
+}
+
+.location {
+  margin-top: 0;
+  margin-bottom: 9px;
+  @include font(null, 14px, null, 1.71, null, $primary-white-color);
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list .list {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-list .list:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.contacts-list.footer {
+  @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include font(null, 14px, null, 1.71, null, rgba(255, 255, 255, 0.6));
+  
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+

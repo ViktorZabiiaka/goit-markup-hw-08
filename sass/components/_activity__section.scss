@@ -1,0 +1,54 @@
+.activity__section {
+    @media screen and ( max-width: 767px) {
+        display: none;
+    }
+  @include sectionMixin(0, 94px);
+  
+  z-index: 1;
+}
+
+.activity__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  @include font(null, 36px, null, 1.17, null,null);
+  text-align: center;
+}
+
+.activity-box.list {
+  position: relative;
+  display: block;
+}
+
+.thumb {
+  position: absolute;
+
+  // @include flex(flex, center, center, null, null);
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity-box__item {
+  padding: 0;
+  margin: 0;
+
+  @include font(null, 14px, 700, 1.14, .03em, $primary-white-color);
+
+  text-transform: uppercase;
+}
+
+.activity.list {
+  display: flex;
+}
+
+.activity.list .list {
+  margin-right: 30px;
+}
+
+.activity.list .list:nth-child(3n) {
+  margin-right: 0;
+}

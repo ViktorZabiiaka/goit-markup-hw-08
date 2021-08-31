@@ -1,0 +1,27 @@
+.footer-social {
+  // width: 206px;
+  // height: 80px;
+  color: $primary-white-color;
+  margin-right: 93px;
+}
+
+.footer-social__title {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @include font(null, 14px, 700, 1.14, .03em, $primary-white-color);
+}
+
+.footer-social__networks {
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer-icons {
+  fill: $primary-white-color;
+}
+
+.footer-social__links {
+  background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,38 @@
+// .feature.list {
+//   // @include flex(flex, null, null, null, wrap);
+// // }
+
+// // .feature.list .feature__list {
+// //   width: 270px;
+// //   margin-right: 30px;
+// // }
+
+// .feature.list .feature__list:nth-child(4n) {
+//   margin-right: 0;
+// }
+
+.features__icon {
+  // @include flex(flex, center, center, null, null);
+
+  // width: 270px;
+  // height: 120px;
+  // margin-bottom: 30px;
+
+  background-color: $secondery-background-color;
+  border-radius: 4px;
+}
+
+.features__title {
+  // margin-top: 0;
+  // margin-bottom: 10px;
+
+  @include font(null, 14px, 700, 1.14, null, null);
+
+}
+
+.features__item {
+  // margin-top: 0;
+  // margin-bottom: 0;
+  
+  @include font(null, 14px, null, 1.71, null, null);
+}

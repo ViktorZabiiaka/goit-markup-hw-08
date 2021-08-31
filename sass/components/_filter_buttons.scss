@@ -1,0 +1,31 @@
+.filter-buttons {
+    // @include flex(flex, null, center, null, null);
+
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.filter-buttons .list {
+  margin-right: 8px;
+}
+
+.filter-buttons .list:nth-child(5) {
+  margin-right: 0;
+}
+
+.button__primary {
+  padding: 6px 22px;
+  @include font(inherit, 16px, 500, 1.63, .03em, $primary-white-color);
+  
+  background-color: $accent-color;
+}
+
+.button__secondary {
+  padding: 6px 22px;
+
+  @include font(inherit, 16px, 500, 1.63, .03em, $primary-color);
+  background-color: $secondery-background-color;
+}
+
+

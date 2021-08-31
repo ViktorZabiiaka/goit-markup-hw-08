@@ -1,0 +1,13 @@
+.logo__link {
+  color: $accent-color;
+}
+.page-header__logo {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #000;
+}
+
+.logo {
+  @include font($secondary-font, 26px, 700, 1.19, .03em, null);
+}
