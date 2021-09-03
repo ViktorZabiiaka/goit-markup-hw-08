@@ -1,12 +1,9 @@
 .team__section {
   background-color: $secondery-background-color;
-  @include sectionMixin(94px, 94px);
+  @include sectionMixin(60px, 60px);
 
 }
 
-.conteiner.team {
-  padding: 0 15px;
-}
 
 .team__title {
   margin-top: 0;

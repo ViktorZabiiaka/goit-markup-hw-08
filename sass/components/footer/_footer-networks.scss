@@ -2,10 +2,11 @@
   // width: 206px;
   // height: 80px;
   color: $primary-white-color;
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .footer-social__title {
+  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 20px;
@@ -14,7 +15,7 @@
 }
 
 .footer-social__networks {
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
 }
 

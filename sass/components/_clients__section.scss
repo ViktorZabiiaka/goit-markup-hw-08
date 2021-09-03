@@ -3,39 +3,53 @@
 }
 
 .clients {
-  // @include flex(flex, center, null, null, null);
-
-  padding: 0;
-  margin: 0;
+  @media screen and (max-width: 767px) {
+    
+    display: flex;
+    flex-wrap: wrap;
+  
+    padding: 0;
+    margin: -15px;
+  }
 }
 
-.clients .list + .list {
-  margin-left: 30px;
+.clients .list {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+
+  }
 }
 
 .clients__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  @include font(null, 36px, null, 1.17, .03em, null);
+  @include font(null, 36px, null, 1.17, 0.03em, null);
   text-align: center;
 }
 
 .clients__link {
-  @include transition(border-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(
+    border-color,
+    null,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 
-  // @include flex(flex, center, center, null, null);
-  // width: 170px;
-  // height: 92px;
+  @include flex(flex, center, center, null, null);
+  max-width: 210px;
+  height: 92px;
 
   border: 1px solid $color-icons;
   border-radius: 4px;
-  
+
   &:hover,
   &:focus {
     border-color: $accent-color;
   }
-  
+
   &:hover .clients__icon,
   &:focus .clients__icon {
     fill: $accent-color;

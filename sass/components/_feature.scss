@@ -1,3 +1,6 @@
+section {
+  @include sectionMixin(60px, 60px);
+}
 // .feature.list {
 //   // @include flex(flex, null, null, null, wrap);
 // // }
@@ -16,16 +19,19 @@
 
   // width: 270px;
   // height: 120px;
-  // margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  text-align: center;
 
   background-color: $secondery-background-color;
   border-radius: 4px;
 }
 
 .features__title {
-  // margin-top: 0;
-  // margin-bottom: 10px;
-
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
   @include font(null, 14px, 700, 1.14, null, null);
 
 }

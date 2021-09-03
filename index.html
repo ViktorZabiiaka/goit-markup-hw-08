@@ -34,8 +34,8 @@
 
     <main>
         <!--Герой-->
-        <section class="section hero hero__section">
-                <div class="conteiner">
+        <section class="section hero__section">
+                <div class="conteiner  hero">
                 <h1 class="section__title hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button button__hero" data-modal-open>Заказать услугу</button>
             </div>
@@ -142,7 +142,11 @@
                 <h2 class="section__title team__title">Наша команда</h2>
                 <ul class="personal">
                     <li class="personal__item list">
-                        <img src="./images/Igor.jpg" alt="Игорь" width="270">
+                        <img
+                        srcset="
+                        ./images/Igor480@1x.jpg 1x,
+                        ./images/Igor480@2x.jpg 2x"
+                        src="./images/Igor.jpg" alt="Игорь" width="480">
                         <div class="personal-content">
                             <h3 class="personal__title">Игорь Демьяненко</h3>
                             <p class="personal-content__item">Product Designer</p>
@@ -163,7 +167,11 @@
                         </div>
                     </li>
                     <li class="personal__item list">
-                        <img src="./images/Olga.jpg" alt="Ольга" width="270">
+                        <img 
+                        srcset="
+                        ./images/Olga480@1x.jpg 1x,
+                        ./images/Olga480@2x.jpg 2x"
+                        src="./images/Olga.jpg" alt="Ольга" width="480">
                         <div class="personal-content">
                             <h3 class="personal__title">Ольга Репина</h3>
                             <p class="personal-content__item">Frontend Developer</p>
@@ -184,7 +192,11 @@
                         </div>
                     </li>
                     <li class="personal__item list">
-                        <img src="./images/Nik.jpg" alt="Николай" width="270">
+                        <img
+                        srcset="
+                        ./images/Nik480@1x.jpg 1x,
+                        ./images/Nik480@2x.jpg 2x"
+                        src="./images/Nik.jpg" alt="Николай" width="480">
                         <div class="personal-content">
                             <h3 class="personal__title">Николай Тарасов</h3>
                             <p class="personal-content__item">Marketing</p>
@@ -205,7 +217,11 @@
                         </div>
                     </li>
                     <li class="personal__item list">
-                        <img src="./images/Mihail.jpg" alt="Михаил" width="270">
+                        <img
+                        srcset="
+                        ./images/Mihail480@1x.jpg 1x,
+                        ./images/Mihail480@2x.jpg 2x"
+                        src="./images/Mihail.jpg" alt="Михаил" width="480">
                         <div class="personal-content">
                             <h3 class="personal__title">Михаил Ермаков</h3>
                             <p class="personal-content__item">UI Designer</p>
@@ -302,10 +318,10 @@
         </div>
     </footer>
 
+    <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
 </body>
 </html>

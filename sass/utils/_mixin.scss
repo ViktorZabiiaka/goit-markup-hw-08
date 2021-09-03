@@ -1,5 +1,6 @@
 @mixin sectionMixin($t, $b) {
     padding-top: $t;
+    
     padding-bottom: $b;
 }
 
