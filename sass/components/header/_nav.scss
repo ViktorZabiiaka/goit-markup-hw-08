@@ -2,9 +2,10 @@
 //     //   @include flex(flex, center, null, null, null);
 // }
 
-// .nav {
-    //   display: flex;
-    // }
+.nav {
+    position: relative;
+    display: flex;
+}
     
 .navigation {
     @media screen and ( max-width: 767px) {
@@ -14,6 +15,8 @@
 //   padding: 0;
 //   margin: 0 0 0 93px;
 }
+
+
 
 // .navigation .navigation__list + .navigation__list {
 //   margin-left: 50px;

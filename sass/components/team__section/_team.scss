@@ -7,8 +7,8 @@
 
 .team__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  @include font(null, 36px, null, 1.17, null, null);
+  @include font(null, 28px, null, 1.17, null, null);
   text-align: center;
 }

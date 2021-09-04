@@ -101,6 +101,128 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 83px 48px 40px;
+  background-color: #ffffff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  z-index: 1;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: #2196f3;
+}
+
+.nav-menu {
+  display: block;
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav-menu__list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.nav-menu__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.nav-menu__link.current {
+  color: #2196f3;
+}
+
+.menu-contacts {
+  padding: 0%;
+  margin: auto 0 64px 0;
+}
+
+.menu-contacts__list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts__tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.contacts__email {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0%;
+}
+
+.mobile-networks__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-networks__list:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-networks__list:not(:first-child) {
+  padding-left: 10px;
+}
+
 .logo__link {
   color: #2196f3;
 }
@@ -118,6 +240,13 @@ header {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+.nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -206,6 +335,7 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -416,8 +546,8 @@ textarea {
 
 .check__label {
   padding-left: 7px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -459,7 +589,7 @@ textarea {
 }
 
 .check__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -638,8 +768,8 @@ section {
 
 .team__title {
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
@@ -877,7 +1007,7 @@ section {
 .clients__title {
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;

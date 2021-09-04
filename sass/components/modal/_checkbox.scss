@@ -7,7 +7,7 @@
 
 .check__label {
   padding-left: 7px;
-  @include font(null, 14px, null, 1.71, .03em, $secondary-text-color);
+  @include font(null, 12px, null, 1.17, .03em, $secondary-text-color);
 }
 
 .check__box {
@@ -41,7 +41,7 @@
 }
 
 .check__link {
-  @include font(null, 14px, null, 1.17, .03em, $accent-color);
+  @include font(null, 12px, null, 1.17, .03em, $accent-color);
   text-decoration-line: underline;
 }
 
