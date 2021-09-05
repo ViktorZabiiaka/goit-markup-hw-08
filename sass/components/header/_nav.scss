@@ -1,14 +1,20 @@
-// .conteiner__nav {
-//     //   @include flex(flex, center, null, null, null);
+.conteiner__nav {
+    position: relative;
+    //   @include flex(flex, center, null, null, null);
+}
+
+// .nav {
+//     display: flex;
 // }
 
-.nav {
-    position: relative;
-    display: flex;
-}
+// @media (min-width: 480px) {
+//     .conteiner {
+//         width: 480px;
+//     }
+// }
     
 .navigation {
-    @media screen and ( max-width: 767px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 //   display: flex;

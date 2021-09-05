@@ -3,8 +3,8 @@
   margin: 0;
 
   @include flex(flex, null, null, null, wrap);
-  margin-right: -30px;
-  margin-bottom: -30px;
+  // margin-right: -30px;
+  // margin-bottom: -30px;
 }
 
 .portfolio__link {
@@ -24,9 +24,16 @@
     opacity: 1;
   }
 }
-
-.portfolio > .list {
-  width: calc(100% / 3 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+.overlay {
+  @media screen and(max-width: 768px) {
+    img {
+      width: 450px;
+    }
+  }
 }
+
+// .portfolio > .list {
+//   width: calc(100% / 3 - 30px);
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+// }
