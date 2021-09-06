@@ -1,5 +1,5 @@
 .activity__section {
-    @media screen and ( max-width: 767px) {
+    @media screen and ( max-width: 1199px) {
         display: none;
     }
   @include sectionMixin(0, 94px);
@@ -21,15 +21,18 @@
 }
 
 .thumb {
-  position: absolute;
-
-  // @include flex(flex, center, center, null, null);
-  left: 0;
-  bottom: 0;
-  // width: 370px;
-  height: 70px;
-
-  background-color: rgba(47, 48, 58, 0.8);
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+  
+    @include flex(flex, center, center, null, null);
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+    
+  }
 }
 
 .activity-box__item {

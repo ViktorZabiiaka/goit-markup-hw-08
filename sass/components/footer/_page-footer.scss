@@ -4,14 +4,18 @@
   background-color: $background-color;
 }
 
-// .footer__conteiner {
-//   @include flex(flex, baseline, space-between, null, null);
-// }
+.footer__conteiner {
+  @media screen and (min-width: 1200px) {
+    @include flex(flex, baseline, null, null, null);
+  }
+}
 
 .conteiner-footer {
-  text-align: center;
-//   padding-right: 9px;
-//   margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+     padding-right: 9px;
+     margin-right: 70px;
+  }
 }
 
 .address {
@@ -19,6 +23,9 @@
 }
 
 .page-footer__logo {
+  @media screen and (min-width: 1200px) {
+    display: flex;    
+  }
   display: block;
 
   margin-bottom: 20px;
@@ -32,12 +39,19 @@
 }
 
 .footer-list {
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    padding: 0;    
+  }
   margin-top: 0;
   margin-bottom: 60px;
   padding: 0;
 }
 
 .footer-list .list {
+   @media screen and (min-width: 1200px) {
+    display: flex;    
+  }
   display: block;
   margin-bottom: 9px;
 }
@@ -53,6 +67,18 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+.footer-box {
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+   @media screen and (min-width: 1200px) {
+    display: flex; 
+    align-items: baseline;   
   }
 }
 

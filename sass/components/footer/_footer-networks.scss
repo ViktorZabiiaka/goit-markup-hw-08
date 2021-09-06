@@ -1,4 +1,7 @@
 .footer-social {
+   @media screen and (min-width: 1200px) {
+    margin: 0;   
+  }
   // width: 206px;
   // height: 80px;
   color: $primary-white-color;
@@ -6,6 +9,9 @@
 }
 
 .footer-social__title {
+   @media screen and (min-width: 1200px) {
+    text-align: start;    
+  }
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;

@@ -35,6 +35,10 @@
     &:focus {
         fill: $accent-color;
     }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .nav-menu {

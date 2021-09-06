@@ -2,6 +2,9 @@
   background-color: $secondery-background-color;
   @include sectionMixin(60px, 60px);
 
+  @media screen and (min-width: 1200px) {
+    @include sectionMixin(94px, 94px);
+  }
 }
 
 
