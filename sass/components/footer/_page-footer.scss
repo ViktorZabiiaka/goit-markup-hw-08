@@ -11,6 +11,10 @@
 }
 
 .conteiner-footer {
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
     text-align: center;
      padding-right: 9px;

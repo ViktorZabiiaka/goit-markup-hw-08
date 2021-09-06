@@ -1,4 +1,16 @@
 .networks {
+  @media screen and (max-width: 767px) {
+    padding: 0 122px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 32px;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,20 +23,26 @@
 }
 
 .networks__link {
-  @include transition(background-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(
+    background-color,
+    null,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 
   @include flex(flex, center, center, null, null);
 
   width: 44px;
   height: 44px;
-  
+
   border-radius: 50%;
-  
+
   &:hover,
   &:focus {
     background-color: $accent-color;
   }
-  
+
   &:hover .networks__icons,
   &:focus .networks__icons {
     fill: $primary-white-color;
@@ -32,7 +50,13 @@
 }
 
 .networks__icons {
-  @include transition(fill, background-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-  
+  @include transition(
+    fill,
+    background-color,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
+
   fill: $color-icons;
 }

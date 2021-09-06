@@ -12,8 +12,6 @@ section {
     @include flex(flex, null, null, null, wrap);
 
     margin: -15px;
-
-
   }
 }
 
@@ -41,15 +39,27 @@ section {
 }
 
 .features__icon {
-  @media screen and (min-width: 1200px) {
-    
+  @media screen and (min-width: 480px) {
     @include flex(flex, center, center, null, null);
-  
+
+    width: 450px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include flex(flex, center, center, null, null);
+
+    width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flex(flex, center, center, null, null);
+
     width: 270px;
     height: 120px;
   }
-  padding-top: 25px;
-  padding-bottom: 25px;
+
   margin-bottom: 30px;
   text-align: center;
 
@@ -58,15 +68,18 @@ section {
 }
 
 .features__title {
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
   @include font(null, 14px, 700, 1.14, null, null);
-
 }
 
 .features__item {
   margin: 0;
-  
+
   @include font(null, 14px, null, 1.71, null, null);
 }

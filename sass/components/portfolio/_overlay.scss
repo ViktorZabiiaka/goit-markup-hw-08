@@ -29,6 +29,13 @@
 }
 
 .overlay__item {
+  @media screen and (min-width: 768px) {
+        padding: 49px 24px;
+    }
+
+  @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }  
   padding: 63px 24px;
   margin: 0;
   @include font(null, 18px, null, 1.56, .03em, $primary-white-color);
