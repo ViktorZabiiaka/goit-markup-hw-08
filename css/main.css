@@ -1716,6 +1716,12 @@ section {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .conteiner-footer {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .conteiner-footer {
     text-align: center;
@@ -1758,7 +1764,6 @@ section {
 
 .footer-list {
   margin-top: 0;
-  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -1809,6 +1814,7 @@ section {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -1820,6 +1826,7 @@ section {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin: 0;
   }
 }
 
