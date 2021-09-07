@@ -1,11 +1,10 @@
 .footer-social {
-   @media screen and (min-width: 1200px) {
-    margin: 0;   
+   @media screen and (max-width: 767px) {
+    margin-bottom: 60px;   
   }
   // width: 206px;
   // height: 80px;
   color: $primary-white-color;
-  margin-bottom: 60px;
 }
 
 .footer-social__title {

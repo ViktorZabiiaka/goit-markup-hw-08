@@ -15,7 +15,7 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 
@@ -79,8 +79,8 @@
 
 .footer-box {
   @media screen and (min-width:768px) {
-    display: flex;
-    justify-content: space-around;
+    @include flex(flex, baseline, space-around, null, null);
+
     margin-bottom: 60px;
   }
   

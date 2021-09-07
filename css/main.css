@@ -417,13 +417,7 @@ header {
 
 @media screen and (max-width: 1199px) {
   .contacts__list:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  .contacts__list:first-child {
-    padding-top: 21px;
-  }
-  .contacts__list:last-child {
-    padding-bottom: 21px;
+    margin-bottom: 8px;
   }
 }
 
@@ -456,9 +450,9 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: #757575;
   }
@@ -468,6 +462,18 @@ header {
   .contacts__adress:hover .contacts__icon,
   .contacts__adress:focus .contacts__icon {
     fill: #2196f3;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__adress.mail {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__adress.tel {
+    padding-bottom: 21px;
   }
 }
 
@@ -1722,7 +1728,7 @@ section {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .conteiner-footer {
     text-align: center;
   }
@@ -1812,6 +1818,9 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 60px;
@@ -1832,12 +1841,11 @@ section {
 
 .footer-social {
   color: #ffffff;
-  margin-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .footer-social {
-    margin: 0;
+    margin-bottom: 60px;
   }
 }
 
